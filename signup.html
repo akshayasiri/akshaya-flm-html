@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+</head>
+<body>
+
+  <h2>Signup Form</h2>
+
+  <form action="submit_signup.php" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm">Confirm Password:</label><br>
+    <input type="password" id="confirm" name="confirm" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+    <label for="skills">Skills:</label><br>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript<br><br>
+
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf, .docx"><br><br>
+
+    <button type="submit">Signup</button>
+  </form>
+
+  <p>Already have an account? <a href="login.html">Login here</a></p>
+
+</body>
+</html>
